@@ -1,0 +1,7 @@
+#include "struct.h"
+#include "getData.h"
+#include "simplify.h"
+#include "printAN.h"
+#include "writeSolver.h"
+#include "attractor.h"
+// #include "merge.h"

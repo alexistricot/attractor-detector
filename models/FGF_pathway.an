@@ -1,0 +1,130 @@
+"Aop" [0, 1]
+"Aos" [0, 1]
+"Cbl" [0, 1]
+"Cic" [0, 1]
+"Cnk" [0, 1]
+"Der" [0, 1, 2]
+"Drk" [0, 1, 2]
+"Dsor1" [0, 1, 2]
+"Gap1" [0, 1]
+"Gro" [0, 1]
+"Kek" [0, 1]
+"Ksr" [0, 1]
+"Msk" [0, 1]
+"PLCg" [0, 1]
+"Pnt" [0, 1, 2]
+"Raf" [0, 1, 2]
+"Ras" [0, 1, 2]
+"Rl" [0, 1, 2]
+"Shc" [0, 1]
+"Sos" [0, 1, 2]
+"Spi" [0, 1, 2]
+"Src42" [0, 1]
+"Sty" [0, 1]
+"Targets" [0, 1]
+"Vein" [0, 1]
+
+"Aop" 0 -> 1 when "Rl"=0
+"Aop" 1 -> 0 when "Rl"=1
+"Aop" 1 -> 0 when "Rl"=2
+"Cic" 0 -> 1 when "Rl"=0
+"Cic" 1 -> 0 when "Rl"=1
+"Cic" 1 -> 0 when "Rl"=2
+"Der" 0 -> 1 when "Aos"=0 and "Cbl"=0 and "Kek"=0 and "Shc"=1 and "Spi"=1
+"Der" 0 -> 1 when "Aos"=0 and "Cbl"=0 and "Kek"=0 and "Shc"=1 and "Vein"=1
+"Der" 0 -> 1 when "Aos"=0 and "Cbl"=0 and "Shc"=1 and "Spi"=2
+"Der" 0 -> 1 when "Aos"=0 and "Cbl"=1 and "Shc"=1 and "Spi"=2
+"Der" 0 -> 1 when "Aos"=1 and "Shc"=1 and "Spi"=2
+"Der" 1 -> 0 when "Aos"=0 and "Cbl"=0 and "Kek"=0 and "Spi"=0 and "Vein"=0
+"Der" 1 -> 0 when "Aos"=0 and "Cbl"=0 and "Kek"=1 and "Spi"=0
+"Der" 1 -> 0 when "Aos"=0 and "Cbl"=0 and "Kek"=1 and "Spi"=1
+"Der" 1 -> 0 when "Aos"=0 and "Cbl"=1 and "Spi"=0
+"Der" 1 -> 0 when "Aos"=0 and "Cbl"=1 and "Spi"=1
+"Der" 1 -> 0 when "Aos"=1 and "Spi"=0
+"Der" 1 -> 0 when "Aos"=1 and "Spi"=1
+"Der" 1 -> 0 when "Shc"=0
+"Der" 1 -> 2 when "Aos"=0 and "Cbl"=0 and "Kek"=0 and "Shc"=1 and "Spi"=2
+"Der" 2 -> 1 when "Aos"=1
+"Der" 2 -> 1 when "Cbl"=1
+"Der" 2 -> 1 when "Kek"=1
+"Der" 2 -> 1 when "Shc"=0
+"Der" 2 -> 1 when "Spi"=0
+"Der" 2 -> 1 when "Spi"=1
+"Drk" 0 -> 1 when "Der"=1
+"Drk" 0 -> 1 when "Der"=2
+"Drk" 1 -> 0 when "Der"=0
+"Drk" 1 -> 2 when "Der"=2
+"Drk" 2 -> 1 when "Der"=0
+"Drk" 2 -> 1 when "Der"=1
+"Dsor1" 0 -> 1 when "Raf"=1
+"Dsor1" 0 -> 1 when "Raf"=2
+"Dsor1" 1 -> 0 when "Raf"=0
+"Dsor1" 1 -> 2 when "Raf"=2
+"Dsor1" 2 -> 1 when "Raf"=0
+"Dsor1" 2 -> 1 when "Raf"=1
+"Gap1" 0 -> 1 when "PLCg"=1
+"Gap1" 1 -> 0 when "PLCg"=0
+"Gro" 0 -> 1 when "Rl"=0
+"Gro" 1 -> 0 when "Rl"=1
+"Gro" 1 -> 0 when "Rl"=2
+"PLCg" 0 -> 1 when "Der"=1
+"PLCg" 0 -> 1 when "Der"=2
+"PLCg" 1 -> 0 when "Der"=0
+"Pnt" 0 -> 1 when "Rl"=1
+"Pnt" 0 -> 1 when "Rl"=2
+"Pnt" 1 -> 0 when "Rl"=0
+"Pnt" 1 -> 2 when "Rl"=2
+"Pnt" 2 -> 1 when "Rl"=0
+"Pnt" 2 -> 1 when "Rl"=1
+"Raf" 0 -> 1 when "Cnk"=1 and "Ksr"=1 and "Ras"=1 and "Src42"=1
+"Raf" 0 -> 1 when "Cnk"=1 and "Ksr"=1 and "Ras"=2 and "Src42"=1
+"Raf" 1 -> 0 when "Cnk"=0
+"Raf" 1 -> 0 when "Ksr"=0
+"Raf" 1 -> 0 when "Ras"=0
+"Raf" 1 -> 0 when "Src42"=0
+"Raf" 1 -> 2 when "Cnk"=1 and "Ksr"=1 and "Ras"=2 and "Src42"=1
+"Raf" 2 -> 1 when "Cnk"=0
+"Raf" 2 -> 1 when "Ksr"=0
+"Raf" 2 -> 1 when "Ras"=0
+"Raf" 2 -> 1 when "Ras"=1
+"Raf" 2 -> 1 when "Src42"=0
+"Ras" 0 -> 1 when "Gap1"=0 and "Sos"=1
+"Ras" 0 -> 1 when "Gap1"=1 and "Sos"=1 and "Sty"=0
+"Ras" 0 -> 1 when "Sos"=2
+"Ras" 1 -> 0 when "Gap1"=1 and "Sos"=1 and "Sty"=1
+"Ras" 1 -> 0 when "Sos"=0
+"Ras" 1 -> 2 when "Gap1"=0 and "Sos"=2
+"Ras" 1 -> 2 when "Gap1"=1 and "Sos"=2 and "Sty"=0
+"Ras" 2 -> 1 when "Gap1"=1 and "Sty"=1
+"Ras" 2 -> 1 when "Sos"=0
+"Ras" 2 -> 1 when "Sos"=1
+"Rl" 0 -> 1 when "Dsor1"=1 and "Msk"=1
+"Rl" 0 -> 1 when "Dsor1"=2 and "Msk"=1
+"Rl" 1 -> 0 when "Dsor1"=0
+"Rl" 1 -> 0 when "Msk"=0
+"Rl" 1 -> 2 when "Dsor1"=2 and "Msk"=1
+"Rl" 2 -> 1 when "Dsor1"=0
+"Rl" 2 -> 1 when "Dsor1"=1
+"Rl" 2 -> 1 when "Msk"=0
+"Sos" 0 -> 1 when "Drk"=1
+"Sos" 0 -> 1 when "Drk"=2
+"Sos" 1 -> 0 when "Drk"=0
+"Sos" 1 -> 2 when "Drk"=2
+"Sos" 2 -> 1 when "Drk"=0
+"Sos" 2 -> 1 when "Drk"=1
+"Targets" 0 -> 1 when "Aop"=0 and "Cic"=0 and "Pnt"=1
+"Targets" 0 -> 1 when "Aop"=0 and "Cic"=0 and "Pnt"=2
+"Targets" 0 -> 1 when "Aop"=0 and "Cic"=1 and "Gro"=0 and "Pnt"=1
+"Targets" 0 -> 1 when "Aop"=0 and "Cic"=1 and "Gro"=0 and "Pnt"=2
+"Targets" 1 -> 0 when "Aop"=1
+"Targets" 1 -> 0 when "Cic"=1 and "Gro"=1
+"Targets" 1 -> 0 when "Pnt"=0
+"Vein" 0 -> 1 when "Der"=1 and "Spi"=1
+"Vein" 0 -> 1 when "Der"=1 and "Spi"=2
+"Vein" 0 -> 1 when "Der"=2 and "Spi"=1
+"Vein" 0 -> 1 when "Der"=2 and "Spi"=2
+"Vein" 1 -> 0 when "Der"=0
+"Vein" 1 -> 0 when "Der"=1 and "Spi"=0
+"Vein" 1 -> 0 when "Der"=2 and "Spi"=0
+
+initial_context "Aop"=0, "Aos"=0, "Cbl"=0, "Cic"=0, "Cnk"=0, "Der"=0, "Drk"=0, "Dsor1"=0, "Gap1"=0, "Gro"=0, "Kek"=0, "Ksr"=0, "Msk"=0, "PLCg"=0, "Pnt"=0, "Raf"=0, "Ras"=0, "Rl"=0, "Shc"=0, "Sos"=0, "Spi"=0, "Src42"=0, "Sty"=0, "Targets"=0, "Vein"=0

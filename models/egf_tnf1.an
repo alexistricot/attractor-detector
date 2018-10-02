@@ -1,0 +1,85 @@
+"AP1" [0,1]
+"ASK1" [0,1]
+"Akt" [0,1]
+"EGF" [0,1]
+"EGFR" [0,1]
+"ERK" [0,1]
+"GSK3" [0,1]
+"IKB" [0,1]
+"IKK" [0,1]
+"JNK" [0,1]
+"MEK" [0,1]
+"MKK4" [0,1]
+"MKK7" [0,1]
+"Map3K1" [0,1]
+"Map3K7" [0,1]
+"NFkB" [0,1]
+"NIK" [0,1]
+"PI3K" [0,1]
+"RAF1" [0,1]
+"RAS" [0,1]
+"SOS" [0,1]
+"TNFR" [0,1]
+"TNFa" [0,1]
+"TRAF2" [0,1]
+"c_Jun" [0,1]
+"ex" [0,1]
+"p38" [0,1]
+"ph" [0,1]
+
+
+"AP1" 0 -> 1 when "c_Jun"=1
+"AP1" 1 -> 0 when "c_Jun"=0
+"ASK1" 0 -> 1 when "TRAF2"=1
+"ASK1" 1 -> 0 when "TRAF2"=0
+"Akt" 0 -> 1 when "PI3K"=1
+"Akt" 1 -> 0 when "PI3K"=0
+"EGFR" 0 -> 1 when "EGF"=1
+"EGFR" 1 -> 0 when "EGF"=0
+"ERK" 0 -> 1 when "MEK"=1
+"ERK" 1 -> 0 when "MEK"=0
+"GSK3" 0 -> 1 when "Akt"=0
+"GSK3" 1 -> 0 when "Akt"=1
+"IKB" 0 -> 1 when "IKK"=0 and "ex"=0
+"IKB" 1 -> 0 when "IKK"=1
+"IKB" 1 -> 0 when "ex"=1
+"IKK" 0 -> 1 when "NIK"=1
+"IKK" 1 -> 0 when "NIK"=0
+"JNK" 0 -> 1 when "MKK7"=1
+"JNK" 1 -> 0 when "MKK7"=0
+"MEK" 0 -> 1 when "RAF1"=1
+"MEK" 1 -> 0 when "RAF1"=0
+"MKK4" 0 -> 1 when "Map3K1"=1
+"MKK4" 0 -> 1 when "Map3K7"=1
+"MKK4" 1 -> 0 when "Map3K1"=0 and "Map3K7"=0
+"MKK7" 0 -> 1 when "ASK1"=1
+"MKK7" 0 -> 1 when "Map3K1"=1
+"MKK7" 1 -> 0 when "ASK1"=0 and "Map3K1"=0
+"Map3K1" 0 -> 1 when "RAS"=1
+"Map3K1" 1 -> 0 when "RAS"=0
+"Map3K7" 0 -> 1 when "TRAF2"=1
+"Map3K7" 1 -> 0 when "TRAF2"=0
+"NFkB" 0 -> 1 when "IKB"=0
+"NFkB" 1 -> 0 when "IKB"=1
+"NIK" 0 -> 1 when "Map3K7"=1
+"NIK" 1 -> 0 when "Map3K7"=0
+"PI3K" 0 -> 1 when "EGFR"=1
+"PI3K" 1 -> 0 when "EGFR"=0
+"RAF1" 0 -> 1 when "RAS"=1
+"RAF1" 1 -> 0 when "RAS"=0
+"RAS" 0 -> 1 when "SOS"=1
+"RAS" 1 -> 0 when "SOS"=0
+"SOS" 0 -> 1 when "EGFR"=1 and "ph"=0
+"TNFR" 0 -> 1 when "TNFa"=1
+"TNFR" 1 -> 0 when "TNFa"=0
+"TRAF2" 0 -> 1 when "TNFR"=1
+"TRAF2" 1 -> 0 when "TNFR"=0
+"c_Jun" 0 -> 1 when "JNK"=1
+"c_Jun" 1 -> 0 when "JNK"=0
+"ex" 0 -> 1 when "NFkB"=1
+"ex" 1 -> 0 when "NFkB"=0
+"p38" 0 -> 1 when "MKK4"=1
+"p38" 1 -> 0 when "MKK4"=0
+"ph" 0 -> 1 when "ERK"=1
+
+initial_context "EGF"=0, "TNFa"=1, "ph"=0, "ERK"=1

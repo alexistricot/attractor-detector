@@ -1,0 +1,54 @@
+type f0(num,num,num);
+type f1(num,num,num);
+type f2(num,num,num);
+type attract(num,num,num);
+
+states(x) <=> x=0 \/ x=1;
+
+// 000,010,110,111
+
+type clause000(num,num,num);
+clause000(0,x1,x2) <=> x1=1;
+not clause000(0,x1,x2) <=> x1!=1;
+type clause001(num,num,num);
+clause001(0,x1,x2) <=> x2=1;
+not clause001(0,x1,x2) <=> x2!=1;
+
+f0(0,x1,x2) <=> clause000(0,x1,x2) \/ clause001(0,x1,x2);
+not f0(0,x1,x2) <=> not clause000(0,x1,x2) /\ not clause001(0,x1,x2);
+
+type clause010(num,num,num);
+clause010(1,x1,x2) <=> x1=0;
+not clause010(1,x1,x2) <=> x1!=0;
+type clause011(num,num,num);
+clause011(1,x1,x2) <=> x2=0;
+not clause011(1,x1,x2) <=> x2!=0;
+
+f0(1,x1,x2) <=> clause010(1,x1,x2) \/ clause011(1,x1,x2);
+not f0(1,x1,x2) <=> not clause010(1,x1,x2) /\ not clause011(1,x1,x2);
+
+f1(x0,0,x2) <=> true;
+not f1(x0,0,x2) <=> false;
+
+type clause110(num,num,num);
+clause110(x0,1,x2) <=> x0=0;
+not clause110(x0,1,x2) <=> x0!=0;
+
+f1(x0,1,x2) <=> clause110(x0,1,x2);
+not f1(x0,1,x2) <=> not clause110(x0,1,x2);
+
+type clause200(num,num,num);
+clause200(x0,x1,0) <=> x0=1;
+not clause200(x0,x1,0) <=> x0!=1;
+
+f2(x0,x1,0) <=> clause200(x0,x1,0);
+not f2(x0,x1,0) <=> not clause200(x0,x1,0);
+
+f2(x0,x1,1) <=> true;
+not f2(x0,x1,1) <=> false;
+
+attract(1,0,0) <=> false;
+
+attract(x0,x1,x2) ==> notx0 := 1-x0 | not f0(x0,x1,x2) \/ attract(notx0,x1,x2);
+attract(x0,x1,x2) ==> notx1 := 1-x1 | not f1(x0,x1,x2) \/ attract(x0,notx1,x2);
+attract(x0,x1,x2) ==> notx2 := 1-x2 | not f2(x0,x1,x2) \/ attract(x0,x1,notx2);

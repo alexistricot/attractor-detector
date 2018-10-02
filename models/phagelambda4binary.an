@@ -1,0 +1,44 @@
+"CI1" [0, 1]
+"CI2" [0, 1]
+"Cro1" [0, 1]
+"Cro2" [0, 1]
+"CII" [0, 1]
+"N" [0, 1]
+
+"CI1" 0 -> 1 when "CI2"=0 and "CII"=0 and "Cro1"=0 and "Cro2"=0
+"CI1" 0 -> 1 when "CI2"=0 and "CII"=0 and "Cro1"=0 and "Cro2"=1
+"CI1" 0 -> 1 when "CI2"=0 and "CII"=0 and "Cro1"=1 and "Cro2"=1
+"CI1" 1 -> 0 when "CII"=1
+"CI1" 1 -> 0 when "Cro1"=1 and "Cro2"=0
+"CI2" 0 -> 1 when "CI1"=0 and "CII"=1
+"CI2" 0 -> 1 when "CI1"=0 and "Cro1"=1 and "Cro2"=0
+"CI2" 1 -> 0 when "CII"=0 and "Cro1"=0 and "Cro2"=0
+"CI2" 1 -> 0 when "CII"=0 and "Cro1"=0 and "Cro2"=1
+"CI2" 1 -> 0 when "CII"=0 and "Cro1"=1 and "Cro2"=1
+"Cro1" 0 -> 1 when "Cro2"=0 and "CI1"=0 and "CI2"=1
+"Cro1" 0 -> 1 when "Cro2"=1 and "CI1"=1 and "CI2"=0
+"Cro1" 0 -> 1 when "Cro2"=1 and "CI1"=0 and "CI2"=0
+"Cro1" 1 -> 0 when "Cro2"=0 and "CI1"=1 and "CI2"=0
+"Cro1" 1 -> 0 when "Cro2"=0 and "CI1"=0 and "CI2"=0
+"Cro1" 1 -> 0 when "Cro2"=1
+"Cro2" 0 -> 1 when "Cro1"=0 and "CI1"=1 and "CI2"=0
+"Cro2" 0 -> 1 when "Cro1"=0 and "CI1"=0 and "CI2"=0
+"Cro2" 1 -> 0 when "Cro1"=0 and "CI1"=0 and "CI2"=1
+"CII" 0 -> 1 when "CI1"=1 and "CI2"=0 and "Cro1"=1 and "Cro2"=0 and "N"=1
+"CII" 0 -> 1 when "CI1"=1 and "CI2"=0 and "Cro1"=0 and "Cro2"=0 and "N"=1
+"CII" 0 -> 1 when "CI1"=1 and "CI2"=0 and "Cro1"=0 and "Cro2"=1 and "N"=1
+"CII" 0 -> 1 when "CI1"=0 and "CI2"=0 and "Cro1"=1 and "Cro2"=0 and "N"=1
+"CII" 0 -> 1 when "CI1"=0 and "CI2"=0 and "Cro1"=0 and "Cro2"=0 and "N"=1
+"CII" 0 -> 1 when "CI1"=0 and "CI2"=0 and "Cro1"=0 and "Cro2"=1 and "N"=1
+"CII" 1 -> 0 when "CI1"=1 and "CI2"=0 and "Cro1"=1 and "Cro2"=1
+"CII" 1 -> 0 when "CI1"=0 and "CI2"=0 and "Cro1"=1 and "Cro2"=1
+"CII" 1 -> 0 when "CI1"=0 and "CI2"=1
+"CII" 1 -> 0 when "N"=0
+"N" 0 -> 1 when "CI1"=1 and "CI2"=0 and "Cro1"=1 and "Cro2"=0
+"N" 0 -> 1 when "CI1"=1 and "CI2"=0 and "Cro1"=0 and "Cro2"=0
+"N" 1 -> 0 when "CI1"=0 and "CI2"=0
+"N" 1 -> 0 when "CI1"=0 and "CI2"=1
+"N" 1 -> 0 when "Cro1"=0 and "Cro2"=1
+"N" 1 -> 0 when "Cro1"=1 and "Cro2"=1
+
+initial_context "CI1"=1, "CI2"=0, "CII"=0, "Cro1"=1, "Cro2"=0, "N"=0

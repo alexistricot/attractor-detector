@@ -1,0 +1,85 @@
+"GATA3" [0, 1]
+"IFNb" [0, 1]
+"IFNbR" [0, 1]
+"IFNg" [0, 1, 2]
+"IFNgR" [0, 1, 2]
+"IL12" [0, 1]
+"IL12R" [0, 1]
+"IL18" [0, 1]
+"IL18R" [0, 1]
+"IL4" [0, 1]
+"IL4R" [0, 1]
+"IRAK" [0, 1]
+"SOCS1" [0, 1]
+"STAT1" [0, 1, 2]
+"STAT4" [0, 1]
+"STAT6" [0, 1]
+"Tbet" [0, 1, 2]
+
+"GATA3" 0 -> 1 when "STAT6"=1 and "Tbet"=0
+"GATA3" 1 -> 0 when "STAT6"=0
+"GATA3" 1 -> 0 when "Tbet"=1
+"GATA3" 1 -> 0 when "Tbet"=2
+"IFNb" 1 -> 0
+"IFNbR" 0 -> 1 when "IFNb"=1
+"IFNbR" 1 -> 0 when "IFNb"=0
+"IFNg" 0 -> 1 when "STAT4"=1
+"IFNg" 0 -> 1 when "Tbet"=1
+"IFNg" 0 -> 1 when "Tbet"=2
+"IFNg" 1 -> 0 when "STAT4"=0 and "Tbet"=0
+"IFNg" 1 -> 2 when "IRAK"=1 and "STAT4"=1
+"IFNg" 1 -> 2 when "Tbet"=2
+"IFNg" 2 -> 1 when "IRAK"=0 and "Tbet"=0
+"IFNg" 2 -> 1 when "IRAK"=0 and "Tbet"=1
+"IFNg" 2 -> 1 when "IRAK"=1 and "STAT4"=0 and "Tbet"=0
+"IFNg" 2 -> 1 when "IRAK"=1 and "STAT4"=0 and "Tbet"=1
+"IFNgR" 0 -> 1 when "IFNg"=1
+"IFNgR" 0 -> 1 when "IFNg"=2
+"IFNgR" 1 -> 0 when "IFNg"=0
+"IFNgR" 1 -> 2 when "IFNg"=2 and "SOCS1"=0
+"IFNgR" 2 -> 1 when "IFNg"=0
+"IFNgR" 2 -> 1 when "IFNg"=1
+"IFNgR" 2 -> 1 when "SOCS1"=1
+"IL12" 1 -> 0
+"IL12R" 0 -> 1 when "IL12"=1 and "STAT6"=0
+"IL12R" 1 -> 0 when "IL12"=0
+"IL12R" 1 -> 0 when "STAT6"=1
+"IL18" 1 -> 0
+"IL18R" 0 -> 1 when "IL18"=1 and "STAT6"=0
+"IL18R" 1 -> 0 when "IL18"=0
+"IL18R" 1 -> 0 when "STAT6"=1
+"IL4" 0 -> 1 when "GATA3"=1 and "STAT1"=0
+"IL4" 1 -> 0 when "GATA3"=0
+"IL4" 1 -> 0 when "STAT1"=1
+"IL4" 1 -> 0 when "STAT1"=2
+"IL4R" 0 -> 1 when "IL4"=1 and "SOCS1"=0
+"IL4R" 1 -> 0 when "IL4"=0
+"IL4R" 1 -> 0 when "SOCS1"=1
+"IRAK" 0 -> 1 when "IL18R"=1
+"IRAK" 1 -> 0 when "IL18R"=0
+"SOCS1" 0 -> 1 when "STAT1"=1
+"SOCS1" 0 -> 1 when "STAT1"=2
+"SOCS1" 0 -> 1 when "Tbet"=1
+"SOCS1" 0 -> 1 when "Tbet"=2
+"SOCS1" 1 -> 0 when "STAT1"=0 and "Tbet"=0
+"STAT1" 0 -> 1 when "IFNbR"=1
+"STAT1" 0 -> 1 when "IFNgR"=1
+"STAT1" 0 -> 1 when "IFNgR"=2
+"STAT1" 1 -> 0 when "IFNbR"=0 and "IFNgR"=0
+"STAT1" 1 -> 2 when "IFNgR"=2
+"STAT1" 2 -> 1 when "IFNgR"=0
+"STAT1" 2 -> 1 when "IFNgR"=1
+"STAT4" 0 -> 1 when "GATA3"=0 and "IL12R"=1
+"STAT4" 1 -> 0 when "GATA3"=1
+"STAT4" 1 -> 0 when "IL12R"=0
+"STAT6" 0 -> 1 when "IL4R"=1
+"STAT6" 1 -> 0 when "IL4R"=0
+"Tbet" 0 -> 1 when "GATA3"=0 and "STAT1"=1
+"Tbet" 0 -> 1 when "GATA3"=0 and "STAT1"=2
+"Tbet" 1 -> 0 when "GATA3"=1 and "STAT1"=0
+"Tbet" 1 -> 0 when "GATA3"=1 and "STAT1"=2
+"Tbet" 1 -> 2 when "GATA3"=0 and "STAT1"=2
+"Tbet" 2 -> 1 when "GATA3"=1 and "STAT1"=0
+"Tbet" 2 -> 1 when "GATA3"=1 and "STAT1"=2
+
+initial_context "GATA3"=0, "IFNb"=0, "IFNbR"=0, "IFNg"=0, "IFNgR"=0, "IL12"=0, "IL12R"=0, "IL18"=0, "IL18R"=0, "IL4"=0, "IL4R"=0, "IRAK"=0, "SOCS1"=0, "STAT1"=0, "STAT4"=0, "STAT6"=0, "Tbet"=0

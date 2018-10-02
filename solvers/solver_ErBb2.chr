@@ -1,0 +1,406 @@
+type f0(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f1(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f2(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f3(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f4(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f5(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f6(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f7(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f8(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f9(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f10(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f11(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f12(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f13(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f14(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f15(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f16(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f17(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f18(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type f19(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+type attract(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+
+states(x) <=> x=0 \/ x=1;
+
+type clause000(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause000(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x7=1;
+not clause000(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x7!=1;
+type clause001(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause001(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x8=1;
+not clause001(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x8!=1;
+type clause002(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause002(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x9=1;
+not clause002(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x9!=1;
+type clause003(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause003(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x11=1;
+not clause003(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x11!=1;
+type clause004(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause004(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x14=1;
+not clause004(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x14!=1;
+
+f0(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause000(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ clause001(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f0(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause000(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) /\ not clause001(0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause010(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause010(1,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x7=0 /\ x8=0 /\ x9=0 /\ x11=0 /\ x14=0;
+not clause010(1,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x7!=0 \/ x8!=0 \/ x9!=0 \/ x11!=0 \/ x14!=0;
+
+f0(1,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause010(1,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f0(1,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause010(1,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause100(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause100(x0,0,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x5=1 /\ x17=0 /\ x18=0;
+not clause100(x0,0,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x5!=1 \/ x17!=0 \/ x18!=0;
+
+f1(x0,0,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause100(x0,0,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f1(x0,0,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause100(x0,0,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause110(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause110(x0,1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x5=0;
+not clause110(x0,1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x5!=0;
+type clause111(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause111(x0,1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x17=1;
+not clause111(x0,1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x17!=1;
+type clause112(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause112(x0,1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x18=1;
+not clause112(x0,1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x18!=1;
+
+f1(x0,1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause110(x0,1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ clause111(x0,1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f1(x0,1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause110(x0,1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) /\ not clause111(x0,1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause200(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause200(x0,x1,0,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x4=1 /\ x17=0 /\ x18=0;
+not clause200(x0,x1,0,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x4!=1 \/ x17!=0 \/ x18!=0;
+
+f2(x0,x1,0,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause200(x0,x1,0,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f2(x0,x1,0,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause200(x0,x1,0,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause210(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause210(x0,x1,1,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x4=0;
+not clause210(x0,x1,1,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x4!=0;
+type clause211(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause211(x0,x1,1,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x17=1;
+not clause211(x0,x1,1,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x17!=1;
+type clause212(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause212(x0,x1,1,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x18=1;
+not clause212(x0,x1,1,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x18!=1;
+
+f2(x0,x1,1,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause210(x0,x1,1,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ clause211(x0,x1,1,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f2(x0,x1,1,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause210(x0,x1,1,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) /\ not clause211(x0,x1,1,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause300(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause300(x0,x1,x2,0,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x4=1;
+not clause300(x0,x1,x2,0,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x4!=1;
+
+f3(x0,x1,x2,0,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause300(x0,x1,x2,0,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f3(x0,x1,x2,0,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause300(x0,x1,x2,0,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause310(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause310(x0,x1,x2,1,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x4=0;
+not clause310(x0,x1,x2,1,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x4!=0;
+
+f3(x0,x1,x2,1,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause310(x0,x1,x2,1,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f3(x0,x1,x2,1,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause310(x0,x1,x2,1,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause400(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause400(x0,x1,x2,x3,0,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x0=0 /\ x13=1 /\ x15=1 /\ x16=1;
+not clause400(x0,x1,x2,x3,0,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x0!=0 \/ x13!=1 \/ x15!=1 \/ x16!=1;
+type clause401(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause401(x0,x1,x2,x3,0,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x0=1 /\ x13=1 /\ x16=1;
+not clause401(x0,x1,x2,x3,0,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x0!=1 \/ x13!=1 \/ x16!=1;
+
+f4(x0,x1,x2,x3,0,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause400(x0,x1,x2,x3,0,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ clause401(x0,x1,x2,x3,0,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f4(x0,x1,x2,x3,0,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause400(x0,x1,x2,x3,0,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) /\ not clause401(x0,x1,x2,x3,0,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause410(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause410(x0,x1,x2,x3,1,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x0=0 /\ x15=0;
+not clause410(x0,x1,x2,x3,1,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x0!=0 \/ x15!=0;
+type clause411(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause411(x0,x1,x2,x3,1,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x13=0;
+not clause411(x0,x1,x2,x3,1,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x13!=0;
+type clause412(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause412(x0,x1,x2,x3,1,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x16=0;
+not clause412(x0,x1,x2,x3,1,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x16!=0;
+
+f4(x0,x1,x2,x3,1,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause410(x0,x1,x2,x3,1,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ clause411(x0,x1,x2,x3,1,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f4(x0,x1,x2,x3,1,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause410(x0,x1,x2,x3,1,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) /\ not clause411(x0,x1,x2,x3,1,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause500(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause500(x0,x1,x2,x3,x4,0,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x16=1;
+not clause500(x0,x1,x2,x3,x4,0,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x16!=1;
+
+f5(x0,x1,x2,x3,x4,0,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause500(x0,x1,x2,x3,x4,0,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f5(x0,x1,x2,x3,x4,0,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause500(x0,x1,x2,x3,x4,0,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause510(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause510(x0,x1,x2,x3,x4,1,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x16=0;
+not clause510(x0,x1,x2,x3,x4,1,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x16!=0;
+
+f5(x0,x1,x2,x3,x4,1,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause510(x0,x1,x2,x3,x4,1,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f5(x0,x1,x2,x3,x4,1,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause510(x0,x1,x2,x3,x4,1,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+f6(x0,x1,x2,x3,x4,x5,0,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> true;
+not f6(x0,x1,x2,x3,x4,x5,0,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> false;
+
+
+f6(x0,x1,x2,x3,x4,x5,1,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> false;
+not f6(x0,x1,x2,x3,x4,x5,1,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> true;
+
+type clause700(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause700(x0,x1,x2,x3,x4,x5,x6,0,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x6=1;
+not clause700(x0,x1,x2,x3,x4,x5,x6,0,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x6!=1;
+
+f7(x0,x1,x2,x3,x4,x5,x6,0,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause700(x0,x1,x2,x3,x4,x5,x6,0,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f7(x0,x1,x2,x3,x4,x5,x6,0,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause700(x0,x1,x2,x3,x4,x5,x6,0,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause710(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause710(x0,x1,x2,x3,x4,x5,x6,1,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x6=0;
+not clause710(x0,x1,x2,x3,x4,x5,x6,1,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x6!=0;
+
+f7(x0,x1,x2,x3,x4,x5,x6,1,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause710(x0,x1,x2,x3,x4,x5,x6,1,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f7(x0,x1,x2,x3,x4,x5,x6,1,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause710(x0,x1,x2,x3,x4,x5,x6,1,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause800(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause800(x0,x1,x2,x3,x4,x5,x6,x7,0,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x7=1 /\ x10=1;
+not clause800(x0,x1,x2,x3,x4,x5,x6,x7,0,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x7!=1 \/ x10!=1;
+
+f8(x0,x1,x2,x3,x4,x5,x6,x7,0,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause800(x0,x1,x2,x3,x4,x5,x6,x7,0,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f8(x0,x1,x2,x3,x4,x5,x6,x7,0,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause800(x0,x1,x2,x3,x4,x5,x6,x7,0,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause810(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause810(x0,x1,x2,x3,x4,x5,x6,x7,1,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x7=0;
+not clause810(x0,x1,x2,x3,x4,x5,x6,x7,1,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x7!=0;
+type clause811(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause811(x0,x1,x2,x3,x4,x5,x6,x7,1,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x10=0;
+not clause811(x0,x1,x2,x3,x4,x5,x6,x7,1,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x10!=0;
+
+f8(x0,x1,x2,x3,x4,x5,x6,x7,1,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause810(x0,x1,x2,x3,x4,x5,x6,x7,1,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ clause811(x0,x1,x2,x3,x4,x5,x6,x7,1,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f8(x0,x1,x2,x3,x4,x5,x6,x7,1,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause810(x0,x1,x2,x3,x4,x5,x6,x7,1,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) /\ not clause811(x0,x1,x2,x3,x4,x5,x6,x7,1,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause900(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause900(x0,x1,x2,x3,x4,x5,x6,x7,x8,0,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x7=1 /\ x12=1;
+not clause900(x0,x1,x2,x3,x4,x5,x6,x7,x8,0,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x7!=1 \/ x12!=1;
+
+f9(x0,x1,x2,x3,x4,x5,x6,x7,x8,0,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause900(x0,x1,x2,x3,x4,x5,x6,x7,x8,0,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f9(x0,x1,x2,x3,x4,x5,x6,x7,x8,0,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause900(x0,x1,x2,x3,x4,x5,x6,x7,x8,0,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause910(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause910(x0,x1,x2,x3,x4,x5,x6,x7,x8,1,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x7=0;
+not clause910(x0,x1,x2,x3,x4,x5,x6,x7,x8,1,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x7!=0;
+type clause911(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause911(x0,x1,x2,x3,x4,x5,x6,x7,x8,1,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x12=0;
+not clause911(x0,x1,x2,x3,x4,x5,x6,x7,x8,1,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x12!=0;
+
+f9(x0,x1,x2,x3,x4,x5,x6,x7,x8,1,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause910(x0,x1,x2,x3,x4,x5,x6,x7,x8,1,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ clause911(x0,x1,x2,x3,x4,x5,x6,x7,x8,1,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f9(x0,x1,x2,x3,x4,x5,x6,x7,x8,1,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause910(x0,x1,x2,x3,x4,x5,x6,x7,x8,1,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) /\ not clause911(x0,x1,x2,x3,x4,x5,x6,x7,x8,1,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause1000(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1000(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,0,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x6=1;
+not clause1000(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,0,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x6!=1;
+
+f10(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,0,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause1000(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,0,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f10(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,0,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause1000(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,0,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause1010(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1010(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,1,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x6=0;
+not clause1010(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,1,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> x6!=0;
+
+f10(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,1,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause1010(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,1,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+not f10(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,1,x11,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause1010(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,1,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause1100(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1100(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,0,x12,x13,x14,x15,x16,x17,x18,x19) <=> x10=1 /\ x12=1;
+not clause1100(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,0,x12,x13,x14,x15,x16,x17,x18,x19) <=> x10!=1 \/ x12!=1;
+
+f11(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,0,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause1100(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,0,x12,x13,x14,x15,x16,x17,x18,x19);
+not f11(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,0,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause1100(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,0,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause1110(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1110(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,1,x12,x13,x14,x15,x16,x17,x18,x19) <=> x10=0;
+not clause1110(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,1,x12,x13,x14,x15,x16,x17,x18,x19) <=> x10!=0;
+type clause1111(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1111(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,1,x12,x13,x14,x15,x16,x17,x18,x19) <=> x12=0;
+not clause1111(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,1,x12,x13,x14,x15,x16,x17,x18,x19) <=> x12!=0;
+
+f11(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,1,x12,x13,x14,x15,x16,x17,x18,x19) <=> clause1110(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,1,x12,x13,x14,x15,x16,x17,x18,x19) \/ clause1111(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,1,x12,x13,x14,x15,x16,x17,x18,x19);
+not f11(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,1,x12,x13,x14,x15,x16,x17,x18,x19) <=> not clause1110(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,1,x12,x13,x14,x15,x16,x17,x18,x19) /\ not clause1111(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,1,x12,x13,x14,x15,x16,x17,x18,x19);
+
+type clause1200(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1200(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,0,x13,x14,x15,x16,x17,x18,x19) <=> x6=1;
+not clause1200(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,0,x13,x14,x15,x16,x17,x18,x19) <=> x6!=1;
+
+f12(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,0,x13,x14,x15,x16,x17,x18,x19) <=> clause1200(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,0,x13,x14,x15,x16,x17,x18,x19);
+not f12(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,0,x13,x14,x15,x16,x17,x18,x19) <=> not clause1200(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,0,x13,x14,x15,x16,x17,x18,x19);
+
+type clause1210(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1210(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,1,x13,x14,x15,x16,x17,x18,x19) <=> x6=0;
+not clause1210(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,1,x13,x14,x15,x16,x17,x18,x19) <=> x6!=0;
+
+f12(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,1,x13,x14,x15,x16,x17,x18,x19) <=> clause1210(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,1,x13,x14,x15,x16,x17,x18,x19);
+not f12(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,1,x13,x14,x15,x16,x17,x18,x19) <=> not clause1210(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,1,x13,x14,x15,x16,x17,x18,x19);
+
+type clause1300(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1300(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,0,x14,x15,x16,x17,x18,x19) <=> x0=1;
+not clause1300(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,0,x14,x15,x16,x17,x18,x19) <=> x0!=1;
+type clause1301(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1301(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,0,x14,x15,x16,x17,x18,x19) <=> x15=1;
+not clause1301(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,0,x14,x15,x16,x17,x18,x19) <=> x15!=1;
+
+f13(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,0,x14,x15,x16,x17,x18,x19) <=> clause1300(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,0,x14,x15,x16,x17,x18,x19) \/ clause1301(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,0,x14,x15,x16,x17,x18,x19);
+not f13(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,0,x14,x15,x16,x17,x18,x19) <=> not clause1300(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,0,x14,x15,x16,x17,x18,x19) /\ not clause1301(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,0,x14,x15,x16,x17,x18,x19);
+
+type clause1310(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1310(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,1,x14,x15,x16,x17,x18,x19) <=> x0=0 /\ x15=0;
+not clause1310(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,1,x14,x15,x16,x17,x18,x19) <=> x0!=0 \/ x15!=0;
+
+f13(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,1,x14,x15,x16,x17,x18,x19) <=> clause1310(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,1,x14,x15,x16,x17,x18,x19);
+not f13(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,1,x14,x15,x16,x17,x18,x19) <=> not clause1310(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,1,x14,x15,x16,x17,x18,x19);
+
+type clause1400(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1400(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,0,x15,x16,x17,x18,x19) <=> x0=0 /\ x11=0 /\ x13=1;
+not clause1400(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,0,x15,x16,x17,x18,x19) <=> x0!=0 \/ x11!=0 \/ x13!=1;
+type clause1401(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1401(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,0,x15,x16,x17,x18,x19) <=> x0=1 /\ x11=0;
+not clause1401(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,0,x15,x16,x17,x18,x19) <=> x0!=1 \/ x11!=0;
+
+f14(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,0,x15,x16,x17,x18,x19) <=> clause1400(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,0,x15,x16,x17,x18,x19) \/ clause1401(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,0,x15,x16,x17,x18,x19);
+not f14(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,0,x15,x16,x17,x18,x19) <=> not clause1400(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,0,x15,x16,x17,x18,x19) /\ not clause1401(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,0,x15,x16,x17,x18,x19);
+
+type clause1410(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1410(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,1,x15,x16,x17,x18,x19) <=> x0=0 /\ x13=0;
+not clause1410(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,1,x15,x16,x17,x18,x19) <=> x0!=0 \/ x13!=0;
+type clause1411(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1411(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,1,x15,x16,x17,x18,x19) <=> x11=1;
+not clause1411(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,1,x15,x16,x17,x18,x19) <=> x11!=1;
+
+f14(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,1,x15,x16,x17,x18,x19) <=> clause1410(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,1,x15,x16,x17,x18,x19) \/ clause1411(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,1,x15,x16,x17,x18,x19);
+not f14(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,1,x15,x16,x17,x18,x19) <=> not clause1410(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,1,x15,x16,x17,x18,x19) /\ not clause1411(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,1,x15,x16,x17,x18,x19);
+
+type clause1500(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1500(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19) <=> x7=1;
+not clause1500(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19) <=> x7!=1;
+type clause1501(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1501(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19) <=> x8=1;
+not clause1501(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19) <=> x8!=1;
+type clause1502(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1502(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19) <=> x9=1;
+not clause1502(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19) <=> x9!=1;
+type clause1503(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1503(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19) <=> x11=1;
+not clause1503(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19) <=> x11!=1;
+type clause1504(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1504(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19) <=> x14=1;
+not clause1504(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19) <=> x14!=1;
+
+f15(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19) <=> clause1500(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19) \/ clause1501(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19);
+not f15(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19) <=> not clause1500(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19) /\ not clause1501(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,0,x16,x17,x18,x19);
+
+type clause1510(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1510(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,1,x16,x17,x18,x19) <=> x7=0 /\ x8=0 /\ x9=0 /\ x11=0 /\ x14=0;
+not clause1510(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,1,x16,x17,x18,x19) <=> x7!=0 \/ x8!=0 \/ x9!=0 \/ x11!=0 \/ x14!=0;
+
+f15(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,1,x16,x17,x18,x19) <=> clause1510(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,1,x16,x17,x18,x19);
+not f15(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,1,x16,x17,x18,x19) <=> not clause1510(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,1,x16,x17,x18,x19);
+
+type clause1600(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1600(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,0,x17,x18,x19) <=> x0=1;
+not clause1600(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,0,x17,x18,x19) <=> x0!=1;
+type clause1601(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1601(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,0,x17,x18,x19) <=> x13=1;
+not clause1601(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,0,x17,x18,x19) <=> x13!=1;
+type clause1602(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1602(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,0,x17,x18,x19) <=> x15=1;
+not clause1602(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,0,x17,x18,x19) <=> x15!=1;
+
+f16(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,0,x17,x18,x19) <=> clause1600(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,0,x17,x18,x19) \/ clause1601(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,0,x17,x18,x19);
+not f16(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,0,x17,x18,x19) <=> not clause1600(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,0,x17,x18,x19) /\ not clause1601(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,0,x17,x18,x19);
+
+type clause1610(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1610(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,1,x17,x18,x19) <=> x0=0 /\ x13=0 /\ x15=0;
+not clause1610(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,1,x17,x18,x19) <=> x0!=0 \/ x13!=0 \/ x15!=0;
+
+f16(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,1,x17,x18,x19) <=> clause1610(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,1,x17,x18,x19);
+not f16(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,1,x17,x18,x19) <=> not clause1610(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,1,x17,x18,x19);
+
+type clause1700(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1700(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,0,x18,x19) <=> x0=0 /\ x2=0 /\ x16=0;
+not clause1700(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,0,x18,x19) <=> x0!=0 \/ x2!=0 \/ x16!=0;
+
+f17(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,0,x18,x19) <=> clause1700(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,0,x18,x19);
+not f17(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,0,x18,x19) <=> not clause1700(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,0,x18,x19);
+
+type clause1710(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1710(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,1,x18,x19) <=> x0=1;
+not clause1710(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,1,x18,x19) <=> x0!=1;
+type clause1711(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1711(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,1,x18,x19) <=> x2=1;
+not clause1711(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,1,x18,x19) <=> x2!=1;
+type clause1712(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1712(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,1,x18,x19) <=> x16=1;
+not clause1712(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,1,x18,x19) <=> x16!=1;
+
+f17(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,1,x18,x19) <=> clause1710(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,1,x18,x19) \/ clause1711(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,1,x18,x19);
+not f17(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,1,x18,x19) <=> not clause1710(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,1,x18,x19) /\ not clause1711(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,1,x18,x19);
+
+type clause1800(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1800(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,0,x19) <=> x0=0 /\ x1=0 /\ x2=0 /\ x16=0;
+not clause1800(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,0,x19) <=> x0!=0 \/ x1!=0 \/ x2!=0 \/ x16!=0;
+
+f18(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,0,x19) <=> clause1800(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,0,x19);
+not f18(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,0,x19) <=> not clause1800(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,0,x19);
+
+type clause1810(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1810(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,1,x19) <=> x0=1;
+not clause1810(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,1,x19) <=> x0!=1;
+type clause1811(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1811(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,1,x19) <=> x1=1;
+not clause1811(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,1,x19) <=> x1!=1;
+type clause1812(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1812(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,1,x19) <=> x2=1;
+not clause1812(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,1,x19) <=> x2!=1;
+type clause1813(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1813(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,1,x19) <=> x16=1;
+not clause1813(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,1,x19) <=> x16!=1;
+
+f18(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,1,x19) <=> clause1810(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,1,x19) \/ clause1811(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,1,x19);
+not f18(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,1,x19) <=> not clause1810(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,1,x19) /\ not clause1811(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,1,x19);
+
+type clause1900(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1900(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,0) <=> x2=1 /\ x3=1;
+not clause1900(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,0) <=> x2!=1 \/ x3!=1;
+
+f19(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,0) <=> clause1900(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,0);
+not f19(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,0) <=> not clause1900(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,0);
+
+type clause1910(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1910(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,1) <=> x2=0;
+not clause1910(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,1) <=> x2!=0;
+type clause1911(num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num,num);
+clause1911(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,1) <=> x3=0;
+not clause1911(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,1) <=> x3!=0;
+
+f19(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,1) <=> clause1910(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,1) \/ clause1911(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,1);
+not f19(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,1) <=> not clause1910(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,1) /\ not clause1911(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,1);
+
+attract(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0) <=> false;
+
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx0 := 1-x0 | not f0(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(notx0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx1 := 1-x1 | not f1(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,notx1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx2 := 1-x2 | not f2(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,notx2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx3 := 1-x3 | not f3(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,notx3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx4 := 1-x4 | not f4(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,notx4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx5 := 1-x5 | not f5(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,notx5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx6 := 1-x6 | not f6(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,x5,notx6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx7 := 1-x7 | not f7(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,x5,x6,notx7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx8 := 1-x8 | not f8(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,x5,x6,x7,notx8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx9 := 1-x9 | not f9(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,notx9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx10 := 1-x10 | not f10(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,notx10,x11,x12,x13,x14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx11 := 1-x11 | not f11(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,notx11,x12,x13,x14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx12 := 1-x12 | not f12(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,notx12,x13,x14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx13 := 1-x13 | not f13(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,notx13,x14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx14 := 1-x14 | not f14(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,notx14,x15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx15 := 1-x15 | not f15(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,notx15,x16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx16 := 1-x16 | not f16(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,notx16,x17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx17 := 1-x17 | not f17(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,notx17,x18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx18 := 1-x18 | not f18(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,notx18,x19);
+attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) ==> notx19 := 1-x19 | not f19(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19) \/ attract(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,notx19);

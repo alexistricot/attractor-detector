@@ -52,10 +52,24 @@ void push(AutoList *l, Automata a, int state){
 
 void pushBasin(BasinList *bl, AutoList *l){
   Basin *b = bl->first;
-  while(b->next!=NULL){
-    b = b->next;
+  if(b == NULL){
+    bl->first = newBasin(l);
   }
-  b->next = newBasin(l);
+  else{
+    while(b->next!=NULL){
+      b = b->next;
+    }
+    b->next = newBasin(l);
+  }
+}
+
+Basin *getBasin(Basin *b, int i){
+  if(i == 0){
+    return b;
+  }
+  else{
+    return getBasin(b->next, i-1);
+  }
 }
 
 void printList(AutoList *l){
@@ -106,6 +120,16 @@ int length(Element *e){
   }
   else{
     return length(e->next) + 1;
+  }
+}
+
+int basinLength(Basin *e){
+
+  if(e == NULL){
+    return 0;
+  }
+  else{
+    return basinLength(e->next) + 1;
   }
 }
 

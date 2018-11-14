@@ -46,11 +46,17 @@ void push(AutoList *l, Automata a, int state);
 //ajoute le bassin b à la liste bl
 void pushBasin(BasinList *bl, AutoList *l);
 
+// renvoie le bassin numéro i de la liste commençant par b
+Basin *getBasin(Basin *b, int i);
+
 // crée une nouvelle liste en concaténant l1 et l2
 AutoList *autoListCat(AutoList *l1, AutoList *l2);
 
 // longueur de la liste commençant par e
 int length(Element *e);
+
+// longueur de la liste de bassins commençant par e
+int basinLength(Basin *e);
 
 // vaut 1 si bl contient un bassin correspondant à l, 0 sinon.
 // requiert le contexte an

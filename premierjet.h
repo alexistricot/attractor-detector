@@ -4,4 +4,4 @@
 #include "printAN.h"
 #include "writeSolver.h"
 #include "attractor.h"
-// #include "merge.h"
+#include "merge.h"

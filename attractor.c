@@ -12,7 +12,7 @@ AutoList *findBasin(AN an){
   int nbcond;
   minFrequency m = minfreq(an);
   Automata a = an.automatas[m.automata]; //automate en cours de traitement
-  Transition t;
+  // Transition t;
 
   // printf("\nDépart : %s = %d\n",an.automatas[m.automata].name,m.state);
 
@@ -54,7 +54,7 @@ AutoList *findBasin(AN an){
     nbcandidats = 0;
     nbcond = 1;
     for(i = a.start; i < a.start + a.nbtrans; i++){ //initialisation des candidats
-      t = an.transitions[i];
+      Transition t = an.transitions[i];
       if(t.fst == m.state){
         for(j = 0; j < t.nbcond; j++){
           if(cond[t.automCond[j]] == -1 && candidats[t.automCond[j]] == -1){
@@ -89,7 +89,7 @@ AutoList *findBasin(AN an){
           a = l->first->automata;
           nbcandidats = 0;
           for(i = a.start; i < a.start + a.nbtrans; i++){ //initialisation des candidats du nouvel état "first"
-            t = an.transitions[i];
+            Transition t = an.transitions[i];
             if(t.fst == l->first->state){
               for(j = 0; j < t.nbcond; j++){
                 if(cond[t.automCond[j]] == -1){

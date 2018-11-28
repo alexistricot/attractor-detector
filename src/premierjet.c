@@ -7,20 +7,20 @@
 #include <time.h>
 
 #include "premierjet.h"
-#include "smchr/smchr.h"
+#include "../smchr/smchr.h"
 
 int main(void){
 
   clock_t temps;
 
-  // AN an = getData("models/mammalian.an");
-  // AN an = getData("models/MAPK.an");
-  // AN an = getData("models/ErBb2.an");
-  // AN an = getData("models/egf_tnf1.an");
-  // AN an = getData("models/th_diff_binary.an");
-  AN an = getData("models/th_diff_noinit_binary.an");
-  // AN an = getData("models/phagelambda4binary.an");
-  // AN an = getData("models/tcrsig40.an");
+  // AN an = getData("../models/mammalian.an");
+  // AN an = getData("../models/MAPK.an");
+  // AN an = getData("../models/ErBb2.an");
+  // AN an = getData("../models/ErBb2_noinit.an");
+  // AN an = getData("../models/egf_tnf1.an");
+  // AN an = getData("../models/th_diff_binary.an");
+  // AN an = getData("../models/th_diff_noinit_binary.an");
+  AN an = getData("../models/phagelambda4binary.an");
 
   simplifyAN(&an);
   // printAN(an);
@@ -82,25 +82,26 @@ int main(void){
     b = b->next;
   }
 
-  for(i = 0; i < an.nbauto; i++){
-    printf("Bassins de longueur %d : %d\n",i,total[i]);
-  }
-  printf("Nombre de bassins : %d\n",nbtotal);
+  // for(i = 0; i < an.nbauto; i++){
+  //   printf("Bassins de longueur %d : %d\n",i,total[i]);
+  // }
+  printf("\nNombre de bassins : %d\n\n",nbtotal);
 
-  // int **m = fusionnable(an, bl);
-  // printf("\n\nMatrice de fusionnabilité\n\n");
-  // int lengthbl = basinLength(bl->first);
-  // int j;
-  // for(i = 0; i < lengthbl; i++){
-  //   printf("\n");
-  //   for(j = 0; j < lengthbl; j++){
-  //     printf("%d ",m[i][j]);
-  //   }
-  // }
-  // for(i = 0; i < lengthbl; i++){
-  //   free(m[i]);
-  // }
-  // free(m);
+  int **m = fusionnable(an, bl);
+  printf("\n\nMatrice de fusionnabilité\n\n");
+  int lengthbl = basinLength(bl->first);
+  int j;
+  for(i = 0; i < lengthbl; i++){
+    printf("\n");
+    for(j = 0; j < lengthbl; j++){
+      printf("%d ",m[i][j]);
+    }
+  }
+  printf("\n");
+  for(i = 0; i < lengthbl; i++){
+    free(m[i]);
+  }
+  free(m);
 
   // MERGE
 
@@ -108,14 +109,14 @@ int main(void){
   printf("\n MERGE \n Nombre de bassins minimaux : %d\n\n",basinLength(minimal->first));
   b = minimal->first;
   while(b!=NULL){
-    printf("Bassin de longueur %d\n",length(b->autolist->first));
+    printf("\nBassin de longueur %d\n\n",length(b->autolist->first));
     printList(b->autolist);
     b = b->next;
   }
 
   printf("\n");
   temps = clock();
-  printf("Temps : %f\n",(double) temps/CLOCKS_PER_SEC);
+  printf("Temps : %f seconde(s)\n",(double) temps/CLOCKS_PER_SEC);
   // printf("\n Nombre d'intersections : %d\n",countIntersections(an,bl));
   return 0;
 }

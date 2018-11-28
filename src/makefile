@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -g -L smchr
+CFLAGS = -g -L ../smchr
 DEPS = premierjet.h
 LIBS = -lsmchr -lm -ldl
 

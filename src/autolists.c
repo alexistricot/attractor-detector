@@ -76,10 +76,10 @@ void printList(AutoList *l){
 
   Element *e = l->first;
 
-  printf("%s %d",e->automata.name, e->state);
+  printf("%s=%d",e->automata.name, e->state);
   while(e->next != NULL){
     e = e->next;
-    printf(" -> %s %d",e->automata.name,e->state);
+    printf(" | %s=%d",e->automata.name,e->state);
   }
   printf("\n");
 }

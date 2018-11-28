@@ -201,41 +201,29 @@ BasinList *merge(AN an, BasinList *bl){
   printf("n : %d\n",n);
   printf("getting fus. matrix...\n");
   int **m = fusionnable(an, bl);
-  printf("got fus. matrix.\n");
-  printf("r\n");
+  printf("got fus. matrix.\n\n");
   int *r = malloc(n*sizeof(int));
-  printf("p\n");
   int *p = malloc(n*sizeof(int));
-  printf("x\n");
   int *x = malloc(n*sizeof(int));
-  // int r[n];
-  // int p[n];
-  // int x[n];
   int j;
-  printf("1\n");
   for(j = 0; j < n; j++){
     r[j] = 0;
     p[j] = 1;
     x[j] = 0;
   }
-  printf("2\n");
   int *np = malloc(sizeof(int));
   *np = n;
   int *nx = malloc(sizeof(int));
   *nx = 0;
-  printf("3\n");
   CliqueList *cl = newCliqueList(NULL);
-  printf("Starting BK\n");
+  printf("Starting Bron-Kerbosch algorithm...\n");
   bronKerbosch(r,p,x,np,nx,n,m,cl);
-  printf("Exiting BK\n");
+  printf("Exiting Bron-Kerbosch algorithm...\n\n");
   // free(m);
   Clique *c = cl->first;
-  printf("1\n");
   BasinList *result = newBasinList(NULL);
   int start;
-  printf("2\n");
   while(c != NULL){
-    printf("ajout d'une clique\n");
     start = 1;
     Basin *b;
     for(j = 0; j < n; j++){
@@ -251,8 +239,8 @@ BasinList *merge(AN an, BasinList *bl){
         }
       }
     }
-    printf("adding basin\n");
-    printList(b->autolist);
+    // printf("adding basin\n");
+    // printList(b->autolist);
     pushBasin(result, b->autolist);
     c = c->next;
   }

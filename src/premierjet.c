@@ -13,14 +13,14 @@ int main(void){
 
   clock_t temps;
 
-  // AN an = getData("../models/mammalian.an");
-  // AN an = getData("../models/MAPK.an");
-  // AN an = getData("../models/ErBb2.an");
-  // AN an = getData("../models/ErBb2_noinit.an");
-  // AN an = getData("../models/egf_tnf1.an");
-  // AN an = getData("../models/th_diff_binary.an");
-  // AN an = getData("../models/th_diff_noinit_binary.an");
-  AN an = getData("../models/phagelambda4binary.an");
+  // AN an = getData("../models/binary/mammalian.an");
+  // AN an = getData("../models/binary/MAPK.an");
+  // AN an = getData("../models/binary/ErBb2.an");
+  // AN an = getData("../models/binary/ErBb2_noinit.an");
+  // AN an = getData("../models/binary/egf_tnf1.an");
+  // AN an = getData("../models/binary/th_diff_binary.an");
+  // AN an = getData("../models/binary/th_diff_noinit_binary.an");
+  AN an = getData("../models/binary/phagelambda4binary.an");
 
   simplifyAN(&an);
   // printAN(an);
